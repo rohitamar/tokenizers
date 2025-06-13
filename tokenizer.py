@@ -6,11 +6,11 @@ class Tokenizer(ABC):
         pass 
 
     @abstractmethod    
-    def train(self, ) -> None: 
+    def train(self, filename: str) -> None: 
         pass 
 
     @abstractmethod 
-    def encode(self, text) -> List[int]:
+    def encode(self, text: str) -> List[int]:
         pass 
 
     @abstractmethod
