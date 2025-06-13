@@ -1,7 +1,7 @@
 from tokenizer import Tokenizer
 from typing import List 
 
-class WhitespaceTokenizer(Tokenizer):
+class WordTokenizer(Tokenizer):
     def __init__(self):
         super().__init__()
         self.vocab = {'<unk>': 0}
@@ -48,4 +48,4 @@ class CharacterTokenizer(Tokenizer):
     def __init__(self):
         super().__init__()
     
-    
+

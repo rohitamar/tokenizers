@@ -5,6 +5,9 @@ class BPETokenizer(Tokenizer):
     def __init__(self):
         super().__init__()
     
+    def train(self, filename):
+        
+
     def encode(self, text: str) -> List[int]:
         pass 
         
