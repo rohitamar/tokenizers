@@ -27,9 +27,8 @@ class BPETokenizer(Tokenizer):
         return freq
 
     def train(self, filename: str) -> None:
-        f = open(filename, 'r')
-        data = f.read()
-        f.close() 
+        with open(filename, 'r') as f:
+            data = f.read()
         words = regex.findall(self.pattern, data)
         tokens_per_word = list(map(self.__word_to_token, words))
         vocab_size = 256
